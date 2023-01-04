@@ -174,7 +174,25 @@ padding-left:10%;/*右侧间距*/
 <br><br>
 8.一切规则以《中华人民共和国宪法》为根本，如有与宪法相抵触的，以宪法为准。一切法律均遵循中华人民共和国相关法律，国外网友再此网站的行为也依旧需要遵循中华人民共和国相关法律。
 <br><br>一切规则以《中华人民共和国宪法》为根本，如有与宪法相抵触的，以宪法为准。
- </p><br>
-				<br>
-							<p class="text-center"><small><span4>Copyright&nbsp;©&nbsp;2023&nbsp;WTCU.&nbsp;&nbsp;All rights reserved. Open source project by <a target="_blank" href="http://github.com/wtcu">WTCU from Github</a>.Powered by <a target="_blank" href="http://github.io">Github Pages</a></span4></small></p><br><br>
+ </p><br><br>
+ 
+ <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+<center><div id="gitalk-container"style="width:900px;"></div></center>
+<script>
+const gitalk = new Gitalk({
+clientID: '930fa721b31a2000c96c',
+clientSecret: '8fed4b27e7f356484b858f888a8fdd28d18f8de1',
+repo: 'wtcu.github.io',      // The repository of store comments,
+owner: 'WTCU',
+admin: ['PangXitong'],
+id: 'bug',      // Ensure uniqueness and length less than 50
+// distractionFreeMode: false  // Facebook-like distraction free mode
+proxy:'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+})
+gitalk.render('gitalk-container')
+</script>
+<br><br><p class="text-center"><small><span4>Copyright&nbsp;©&nbsp;2023&nbsp;WTCU.&nbsp;&nbsp;All rights reserved. Open source project by <a target="_blank" href="http://github.com/wtcu">WTCU from Github</a>.Powered by <a target="_blank" href="http://github.io">Github Pages</a></span4></small></p><br><br>
 						
