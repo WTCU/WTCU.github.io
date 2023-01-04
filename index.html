@@ -1031,28 +1031,22 @@ var _hmt = _hmt || [];
 		<!-- footer start --> 
 		<footer id="footer">
 			<!--评论-->
-<center><div id="gitalk-container"style="width:800px;"></div></center>
+<!-- CSS -->
+<link href="http://fth6ng.natappfree.cc" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<!-- or -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<!-- JS -->
+<script src="http://fth6ng.natappfree.cc"></script>
 
-
-<div id="gitalk-container"></div>
+<!-- Artalk -->
+<div id="Comments"></div>
 <script>
-const gitalk = new Gitalk({
-clientID: '930fa721b31a2000c96c',
-clientSecret: '8fed4b27e7f356484b858f888a8fdd28d18f8de1',
-repo: 'wtcu.github.io',      // The repository of store comments,
-owner: 'WTCU',
-admin: ['PangXitong'],
-id: 'bug',      // Ensure uniqueness and length less than 50
-// distractionFreeMode: false  // Facebook-like distraction free mode
-proxy:'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+new Artalk({
+  el:        '#Comments',                // 绑定元素的 Selector
+  pageKey:   '/post/1',                  // 固定链接 (留空自动获取)
+  pageTitle: 'WTCU自建评论测试',  // 页面标题 (留空自动获取)
+  server:    'http://fth6ng.natappfree.cc',  // 后端地址
+  site:      'WTCU',             // 你的站点名
 })
-gitalk.render('gitalk-container')
 </script>
 
 <!-- .footer start --> 
