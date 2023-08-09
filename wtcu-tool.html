@@ -5,29 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WTCU小助手</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #f5f5f5;
-      padding: 10px;
-    }
-    header nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
     main {
       margin-top: 50px;
       padding: 20px;
@@ -40,12 +17,12 @@
       background-position: center;
       margin: 0 auto;
     }
-    h1 {
+    .abc h1 {
       text-align: center;
       font-size: calc(16px + 2vw); /* 使用 vw 单位自适应调整字体大小 */
       margin-top: 20px;
     }
-    p {
+    .abc p {
       text-align: center;
       font-size: calc(14px + 1vw); /* 使用 vw 单位自适应调整字体大小 */
       margin-top: 10px;
@@ -59,21 +36,6 @@
       max-width: 100%;
       margin: 10px;
     }
-    footer {
-      text-align: center;
-      background: #f5f5f5;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-    footer p {
-      font-size: 12px;
-      color: #777;
-      margin: 0;
-    }
-
     /* 媒体查询：当浏览器宽度小于等于 600px 时，修改标题和段落的字体大小 */
     @media (max-width: 600px) {
       h1 {
@@ -83,35 +45,141 @@
         font-size: 16px;
       }
     }
+    
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div>
-        <a href="link1.html">链接1</a>
-        <a href="link2.html">链接2</a>
-      </div>
-      <div>
-        <a href="#top">回到顶部</a>
-      </div>
-    </nav>
-  </header>
+  		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<link href="css/custom.css" rel="stylesheet">
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6cc7099242ca70f3239d7f109b039782";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	</head>
+
+	<body class="no-trans">
+			<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- 导航栏logo -->
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logo.jpeg" alt="Worthy"width="60" height="60"></a>
+							</div>
+
+							<!-- name-and-slogan -->
+							<div class="logo-section smooth-scroll">
+								<div class="brand"><a href="#banner">WTCU</a></div>								
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- 导航栏开始 --> 
+						<div class="header-right">
+
+							<!-- 思路导航开始 --> 
+							<div class="main-navigation animated">
+
+								<!-- 导航条开始 --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- 此处切换获得分组为更好的移动显示 -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- 导航栏 -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="./index.html">主页</a></li>
+												<li><a href="https://pangxitong.github.io/blog/open.html">声明与守则</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- 导航栏结束 -->
+
+							</div>
+							<!-- 思路导航栏结束 -->
+
+						</div>
+						<!-- 页眉结束 -->
+
+					</div>
+				</div>
+			</div>
+		</header>
   <main>
     <div class="icon"></div>
      <div class="screenshot">
-      <img src="screenshot1.png" alt="软件图标">
+      <img src="./images/MCCU.webp" alt="软件图标"width="200" height="200">
     </div>
-    <h1>WTCU小助手</h1>
-    <p>这是一个显示mac开机时间的小组件。</p>
-    <div class="screenshot">
-      <img src="screenshot1.png" alt="软件截图">
-      <img src="screenshot2.png" alt="软件截图">
-      <img src="screenshot3.png" alt="软件截图">
+    <div class="abc">
+    	<h1>WTCU小助手</h1>
+    	<p>这是一个显示mac开机时间的小组件。</p>
     </div>
+    <center><div class="screenshot"style="max-width:900px">
+      <div class="item">
+      <img src="./wtcu-tool/1.png" alt="软件截图">
+      </div>
+      <div class="item">
+      <img src="./wtcu-tool/2.png" alt="软件截图">
+      </div>
+    </div>
+    </center>
+    <center>
+    <div class="screenshot"style="max-width:800px">
+      <div class="item">
+      <img src="./wtcu-tool/3.png" alt="软件截图">
+      </div>
+    </div>
+    </center>
+    <center><br><br><br>
+    <table><tr align="center"><td>
+    <p><big><big>在GitHub查看</big></big></p>
+    <a href="https://github.com/WTCU/macOS-tool"target="_blank"><img border="0" src="./images/GitHub.webp"width="160" height="160" /></a>
+    </td><td>
+    <p><big><big>下载文件</big></big></p>
+    <a href="https://github.com/WTCU/macOS-tool/releases/download/0.1.0/WTCU.dmg"target="_blank"><img border="0" src="./wtcu-tool/DMG.jpg"width="160" height="160" /></a>
+    </center>
+    </td></tr></table>
+    <br><br>
   </main>
-  <footer>
-    <p>&copy; 2022-2023 PangXitong. 保留所有权利。开源项目由 PangXitong 提供支持。Powered by Github Pages</p>
-  </footer>
+  <p class="text-center"><small><span4>Copyright&nbsp;©&nbsp;2022-2023&nbsp;WTCU.&nbsp;&nbsp;All rights reserved. Open source project by <a target="_blank" href="http://github.com/wtcu">WTCU from Github</a>.Powered by <a target="_blank" href="http://github.io">Github Pages</a>.</span4></small></p><br>
 </body>
 </html>
