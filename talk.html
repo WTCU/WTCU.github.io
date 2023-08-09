@@ -61,7 +61,16 @@ var _hmt = _hmt || [];
 <!-- JS -->
 <script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.4.4/Artalk.js"></script>
 <!-- Artalk -->
-<include src="Arttalk.html"></include>        <style>
+<center><div id="Comments"style="max-width:900px;"></div></center>
+<script>
+new Artalk({
+  el:        '#Comments',// 绑定元素的 Selector
+  pageKey:   'https://wtcu.github.io/',// 固定链接 (留空自动获取)
+  pageTitle: '',  // 页面标题 (留空自动获取)
+  server:    'https://3jxkfrdkfhha.ngrok.xiaomiqiu123.top',  // 后端地址
+  site:      'WTCU',             // 你的站点名
+})
+</script>       <style>
         .button1 {
             -webkit-transition-duration: 0.4s;
             transition-duration: 0.4s;
