@@ -899,3 +899,15 @@ border-radius: 50%;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
+#wyvideo{
+	width:399px; 
+	height:auto;
+}
+
+@media screen and (max-width:768px) {
+	#wyvideo {
+		width: 100%;
+		height: 500;
+	}
+}
